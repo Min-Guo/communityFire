@@ -60,14 +60,14 @@ declare var firebase: any;
 export module main {
   // Feel free to change to your own Firebase URL :)
   // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyDvbUblHfA5eJe5sK1Xy-xC_tfV4y4PgQE",
-    authDomain: "signalling-d073b.firebaseapp.com",
-    databaseURL: "https://signalling-d073b.firebaseio.com",
-    storageBucket: "signalling-d073b.appspot.com",
-    messagingSenderId: "308144322392"
-  };
-  firebase.initializeApp(config);
+  // var config = {
+  //   apiKey: "AIzaSyDvbUblHfA5eJe5sK1Xy-xC_tfV4y4PgQE",
+  //   authDomain: "signalling-d073b.firebaseapp.com",
+  //   databaseURL: "https://signalling-d073b.firebaseio.com",
+  //   storageBucket: "signalling-d073b.appspot.com",
+  //   messagingSenderId: "308144322392"
+  // };
+  
   export let matches: ICommunityMatch[] = [];
   // Saving as json because firebase has restriction on keys (and we use "data: any").
   // Example error: Firebase.set failed: First argument  contains an invalid key (playerId0.5446834512026781) in property 'matches.0.playerIdToProposal'.  Keys must be non-empty strings and can't contain ".", "#", "$", "/", "[", or "]"

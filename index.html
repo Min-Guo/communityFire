@@ -19,6 +19,20 @@
   <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase-database.js"></script>
 
   <!-- Your application  -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.1/firebase.js"></script>
+  <script>
+  // Initialize Firebase
+    var config = {
+      apiKey: "AIzaSyBK6zz-UQlLuSS8RIyodN9q155Ij3SzSHc",
+      authDomain: "backgammonchat.firebaseapp.com",
+      databaseURL: "https://backgammonchat.firebaseio.com",
+      storageBucket: "backgammonchat.appspot.com",
+      messagingSenderId: "73316530379"
+    };
+    firebase.initializeApp(config);
+  </script>
+  
+  <script src="src/chat.js"></script>
   <script src="ts_output_readonly_do_NOT_change_manually/src/log.js"></script>
   <script src="ts_output_readonly_do_NOT_change_manually/src/messageSender.js"></script>
   <script src="ts_output_readonly_do_NOT_change_manually/src/main.js"></script>
@@ -53,11 +67,17 @@
 
 </head>
 <body ng-cloak>
-  
-  <div ng-view ></div> 
-  <div  id="game_container">
+  <md-toolbar>
+      <div class="md-toolbar-tools">
+        <span>Backgammon</span>
+      </div>
+  </md-toolbar>
+  <md-content id="main-content" layout>
+  <div ng-view layout="column"></div> 
+  <!--<div  id="game_container">-->
     <iframe id="game_iframe" src="https://dihou.github.io/Backgammon/" seamless="seamless"></iframe>
   </div>
   
+  </md-content>
 </body>
 </html>
