@@ -57,21 +57,26 @@
           <i>account_circle</i>Sign-in with Google
         </button>
     </div>
-    <form id="message-form" action="#">
-      <div >
-        <input type="text" id="message">
-        <label  for="message">Message...</label>
+    <div>
+      <div id="messages">
+        <span id="message-filler"></span>
       </div>
+      <form id="message-form" action="#">
+        <div>
+          <input type="text" id="message">
+          <label  for="message">Message...</label>
+        </div>
         <button id="submit" disabled type="submit">
-              Send
+          Send
         </button>
-    </form>
-    <form id="image-form" action="#">
+      </form>
+      <form id="image-form" action="#">
         <input id="mediaCapture" type="file" accept="image/*,capture=camera">
         <button id="submitImage" title="Add an image">
             <i>image</i>
         </button>
-    </form>    
+      </form> 
+  </div>   
   </div>
 </script>
 
