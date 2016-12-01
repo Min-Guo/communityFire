@@ -12,3 +12,5 @@ Community games using Firebase
 4. Click "Sign In" button, sign in firebase chat with google account.
 
 5. Now you can chat.
+
+6. Chrome support emoji well. Open Chrome, go to edit and select emoji.
