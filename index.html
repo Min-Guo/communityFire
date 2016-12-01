@@ -45,24 +45,23 @@
 </script>
 
 <script type="text/ng-template" id="html-templates/mainPage.html">
-<md-toolbar>
-  <div class="md-toolbar-tools">
-    <img ng-src="{{main.myPlayerInfo.avatarImageUrl}}"
-              alt="Your avatar" 
-              class="avatar">
-    <h3>Hi {{main.myPlayerInfo.displayName}}! (You play {{main.myPlayerInfo.myCommunityPlayerIndex == 0 ? 'Black' : 'White'}})</h3>
-  </div>
-</md-toolbar>
+  <div>
+    <h1>hahah</h1>
 
-  <md-content flex>
-    <md-list>
-      <md-list-item 
-          ng-click="main.gotoPlayPage($index)" 
-          ng-repeat="match in main.matches track by $index">
-        <p></p>
-      </md-list-item>
-    </md-list>
-  </md-content>
+    <form id="message-form" action="#">
+      <div >
+        <input type="text" id="message">
+        <label  for="message">Message...</label>
+      </div>
+        <button id="submit" disabled type="submit">
+              Send
+        </button>
+    </form>
+    <button id="sign-in" type="button">Sign in</button>
+    <button  id="sign-out">
+          Sign-out
+        </button>
+  </div>
 </script>
 
 </head>
