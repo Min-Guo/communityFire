@@ -1,5 +1,16 @@
 <html ng-app="MyApp" lang="en" >
 <head>
+  <style> 
+    input[type=text] {
+        width: 100%;
+        padding: 15px 20px;
+        margin: 50px 10;
+        box-sizing: border-box;
+        border: none;
+        background-color: #D3D3D3;
+        color: #3F51B5;
+    }
+  </style>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <!-- Angular Material style sheet -->
   <link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.css">
@@ -46,27 +57,26 @@
 
 <script type="text/ng-template" id="html-templates/mainPage.html">
   <div>
-    <h1>Group Chat</h1>
-    <div id="user-container">
+    <h1 align="center">Chat</h1>
+    <div id="user-container" style="text-align: center;margin-bottom: 100px">
         <div hidden id="user-pic"></div>
         <div hidden id="user-name"></div>
-        <button hidden id="sign-out" >
-          Sign-out
+        <button hidden id="sign-out" style="font-size:12pt;color:white;background-color:#3F51B5;border:2px solid #336600;padding:6px">
+          Sign Out
         </button>
-        <button hidden id="sign-in">
-          <i>Sign-in with Google</i>
+        <button hidden id="sign-in" style="font-size:12pt;color:white;background-color:#3F51B5;border:2px solid #336600;padding:6px">
+          <i>Sign In</i>
         </button>
     </div>
     <div>
-      <div id="messages">
+      <div id="messages" style="margin-top: 100px">
         <span id="message-filler"></span>
       </div>
       <form id="message-form" action="#">
         <div>
           <input type="text" id="message">
-          <label for="message">Message...</label>
         </div>
-        <button id="submit" type="submit">
+        <button id="submit" type="submit" style="font-size:12pt;color:white;background-color:#3F51B5;border:2px solid #336600;padding:5px; vertical-align:top; float: right">
           Send
         </button>
       </form>
@@ -83,7 +93,7 @@
 </head>
 <body ng-cloak>
   <md-toolbar>
-      <div class="md-toolbar-tools">
+      <div class="md-toolbar-tools" style="font-size:20pt;color:black;font-weight: bold">
         <span>Backgammon</span>
       </div>
   </md-toolbar>
